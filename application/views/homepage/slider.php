@@ -7,6 +7,8 @@
 					<?php 
 						$contor = 0;
 						foreach($slider as $oneslide) { 
+						
+						
 						?>
 						<li data-target="#slider-carousel" data-slide-to="<?=$contor?>" class="<?php if($contor==0) echo 'active';?>"></li>
 						<?php 
