@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $config['devMode'] = true;
-if($_SERVER['SERVER_ADDR'] == '128.199.38.138') {
+if($_SERVER['SERVER_NAME'] == '128.199.38.138') {
 	$config['devMode'] = false;
 	$config['base_url'] = 'http://test123.com/';
 } else {
