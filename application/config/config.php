@@ -23,8 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci/';
 
+$config['devMode'] = true;
+if($_SERVER['SERVER_ADDR'] == '128.199.38.138') {
+	$config['devMode'] = false;
+	$config['base_url'] = 'http://test123.com/';
+} else {
+	$config['base_url'] = 'http://localhost/ci/';
+}
 /*
 |--------------------------------------------------------------------------
 | Index File
